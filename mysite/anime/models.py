@@ -13,3 +13,4 @@ class Animedata(models.Model):
   duration = models.FloatField()
   rating = models.FloatField()
   genre = models.CharField(max_length=200, default='slice of life')
+  image = models.ImageField(upload_to='Images/', default='Images/None/Noimg.jpg')
