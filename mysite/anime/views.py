@@ -8,3 +8,7 @@ from .models import Animedata
 class AnimeViewSet(viewsets.ModelViewSet):
   queryset = Animedata.objects.all()
   serializer_class = AnimeSerializer
+
+class ThrillerViewSet(viewsets.ModelViewSet):
+  queryset = Animedata.objects.filter(genre='thriller')
+  serializer_class = AnimeSerializer

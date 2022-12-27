@@ -7,3 +7,6 @@ from .models import Moviedata
 class MovieViewSet(viewsets.ModelViewSet):
   queryset = Moviedata.objects.all()
   serializer_class = MovieSerializer
+
+class HorrorViewSet(viewsets.ModelViewSet):
+  queryset = Moviedata.objects.filter(genre='horror')
